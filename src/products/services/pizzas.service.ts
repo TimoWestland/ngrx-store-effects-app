@@ -9,7 +9,9 @@ import { Pizza } from '../models/pizza.model';
 
 @Injectable()
 export class PizzasService {
-  constructor(private http: HttpClient) {}
+  constructor(
+    private http: HttpClient
+  ) {}
 
   getPizzas(): Observable<Pizza[]> {
     return this.http

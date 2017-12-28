@@ -1,10 +1,6 @@
-import {
-  Component,
-  Input,
-  Output,
-  EventEmitter,
-  ChangeDetectionStrategy,
-} from '@angular/core';
+import { Component, Input, ChangeDetectionStrategy } from '@angular/core';
+
+import { Pizza } from '../../models/pizza.model';
 
 @Component({
   selector: 'pizza-item',
@@ -25,5 +21,5 @@ import {
   `,
 })
 export class PizzaItemComponent {
-  @Input() pizza: any;
+  @Input() pizza: Pizza;
 }
